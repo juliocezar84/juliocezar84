@@ -6,6 +6,16 @@ on:
   workflow_dispatch:
 
 jobs:
+  sleep:
+    runs-on: self-hosted
+    name: sleep
+    steps:
+      - name: first step
+        run: sleep 10s
+      - name: second step
+        run: sleep 10s
+      - name: third step
+        run: sleep 10s
   build:
     runs-on: self-hosted
     name: generate-github-profile-3d-contrib
